@@ -10,7 +10,7 @@ import photo from "@/public/image.png";
 const Leftsidebar = () => {
   const active = "Dashboard";
   return (
-    <div className="flex flex-col justify-between">
+    <div className=" hidden flex-col  justify-between xl:flex">
       <div className="h-screen w-[160px]  bg-white  shadow-md ">
         <div className="flex flex-col items-center pb-4 shadow ">
           <Image src={photo} alt="avatar" className="scale-50 rounded-full" />
@@ -55,7 +55,7 @@ const Leftsidebar = () => {
           </div>
         </div>
       </div>
-      <div className="relative bottom-0 flex w-full items-center justify-center gap-2 bg-blue-100/90 py-1 text-center shadow">
+      <div className="relative bottom-9 flex w-full items-center justify-center gap-2 bg-blue-100/90 py-1 text-center shadow">
         Log out{" "}
         <span className="text-red-500/80">
           <IoPower />
